@@ -3,10 +3,12 @@
   box-sizing: border-box;
   display: block;
   overflow: hidden;
-  max-width: 800px;
+  max-height: 500px;
+  width: 80vh;
   margin: auto;
   border: 3px solid black;
   margin-bottom: 30px;
+  display: flex;
 }
 
 svg{
@@ -36,8 +38,10 @@ svg{
   display: flex;
   justify-content: center;
   gap: 10px;
+  position: relative;
 }
 
-.choose-images div{
+.choose-images button{
   width: 100px;
-}
+  height: 100px;
+  background-color: transparent;}

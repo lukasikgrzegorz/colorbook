@@ -3,6 +3,7 @@ const svgHolder = document.querySelector(".canvas-holder");
 const svgCanva = document.querySelector("svg");
 const colorHolder = document.querySelector(".color-holder");
 const chooseImg = document.querySelector(".choose-images");
+const frog = document.querySelector("#frog");
 let actualColor = "red";
 
 let colors = [
@@ -30,11 +31,16 @@ colorHolder.addEventListener("click", (e) => {
 })
 
 //Canvas coloring
-svgCanva.addEventListener("click", (e) => {
+svgHolder.addEventListener("click", (e) => {
     e.target.hasAttribute("fill") ? e.target.setAttribute("fill", actualColor) : null;
 })
 
-// //Choose images
-// chooseImg.addEventListener("click", (e) => {
-//     svgHolder.innerHTML = e.target.innerHTML;
-// })
+//Choose images
+chooseImg.addEventListener("click", (e) => {
+    if (event.target.nodeName === "BUTTON") {
+        console.log(e.target);
+        svgHolder.innerHTML = e.target.children[0].innerHTML;
+    }
+    
+    
+})
