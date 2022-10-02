@@ -33,6 +33,11 @@ svg{
   border-radius: 50%;
 }
 
+.color-holder button:hover,
+.color-holder button:focus {
+  border: 6px solid black;
+}
+
 .choose-images{
   height: 100px;
   display: flex;
@@ -44,4 +49,14 @@ svg{
 .choose-images button{
   width: 100px;
   height: 100px;
+  border: 1px solid black;
   background-color: transparent;}
+
+.choose-images button:hover,
+.choose-images button:focus{
+  border: 4px solid black;
+}
+
+.choose-images button div{
+  pointer-events: none;
+}
